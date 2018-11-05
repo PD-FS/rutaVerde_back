@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @activity_register.activity %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @activity_register.user_id %>
+</p>
+
+<p>
+  <strong>Picture1:</strong>
+  <%= @activity_register.picture1 %>
+</p>
+
+<p>
+  <strong>Picture2:</strong>
+  <%= @activity_register.picture2 %>
+</p>
+
+<p>
+  <strong>Picture3:</strong>
+  <%= @activity_register.picture3 %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @activity_register.comments %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @activity_register.value %>
+</p>
+
+<%= link_to 'Edit', edit_activity_register_path(@activity_register) %> |
+<%= link_to 'Back', activity_registers_path %>

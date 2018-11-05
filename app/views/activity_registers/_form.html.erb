@@ -1,0 +1,52 @@
+<%= form_with(model: activity_register, local: true) do |form| %>
+  <% if activity_register.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(activity_register.errors.count, "error") %> prohibited this activity_register from being saved:</h2>
+
+      <ul>
+      <% activity_register.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :activity_id %>
+    <%= form.text_field :activity_id, id: :activity_register_activity_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.number_field :user_id, id: :activity_register_user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :picture1 %>
+    <%= form.text_field :picture1, id: :activity_register_picture1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :picture2 %>
+    <%= form.text_field :picture2, id: :activity_register_picture2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :picture3 %>
+    <%= form.text_field :picture3, id: :activity_register_picture3 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :comments %>
+    <%= form.text_field :comments, id: :activity_register_comments %>
+  </div>
+
+  <div class="field">
+    <%= form.label :value %>
+    <%= form.number_field :value, id: :activity_register_value %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

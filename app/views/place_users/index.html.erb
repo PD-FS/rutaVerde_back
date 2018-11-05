@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Place Users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Place</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @place_users.each do |place_user| %>
+      <tr>
+        <td><%= place_user.user_id %></td>
+        <td><%= place_user.place %></td>
+        <td><%= link_to 'Show', place_user %></td>
+        <td><%= link_to 'Edit', edit_place_user_path(place_user) %></td>
+        <td><%= link_to 'Destroy', place_user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Place User', new_place_user_path %>

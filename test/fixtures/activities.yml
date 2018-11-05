@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  initial_time: 2018-11-05
+  final_time: 2018-11-05
+  description: MyString
+  requirements: MyString
+  user_id: 1
+  civicoin_give: 1
+  cost: false
+  value: 9.99
+
+two:
+  name: MyString
+  initial_time: 2018-11-05
+  final_time: 2018-11-05
+  description: MyString
+  requirements: MyString
+  user_id: 1
+  civicoin_give: 1
+  cost: false
+  value: 9.99

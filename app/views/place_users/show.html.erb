@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @place_user.user_id %>
+</p>
+
+<p>
+  <strong>Place:</strong>
+  <%= @place_user.place %>
+</p>
+
+<%= link_to 'Edit', edit_place_user_path(@place_user) %> |
+<%= link_to 'Back', place_users_path %>
